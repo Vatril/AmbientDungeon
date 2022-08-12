@@ -1,0 +1,35 @@
+.joinMessage {
+    margin: 0;
+    padding: 1em;
+}
+
+.statusBox {
+    padding: 1em;
+    display: grid;
+    grid-template-columns: auto auto;
+}
+
+.statusBox p {
+    margin: 0;
+    text-transform: capitalize;
+}
+
+.statusBox p:nth-child(odd) {
+    padding-right: 0.5em;
+}
+
+.statusBox span {
+    padding-left: 1em;
+    cursor: pointer;
+}
+
+.playBox{
+    display: flex;
+    align-items: center;
+}
+
+.controlBox{
+    display: flex;
+    flex-direction: row;
+    padding-right: 1em;
+}

@@ -1,0 +1,55 @@
+{
+  "name": "ambient_dungeon",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@apollo/client": "^3.6.9",
+    "@discordjs/voice": "^0.11.0",
+    "@testing-library/jest-dom": "^5.16.5",
+    "@testing-library/react": "^13.3.0",
+    "@testing-library/user-event": "^13.5.0",
+    "apollo-server": "^3.10.1",
+    "apollo-server-core": "^3.10.1",
+    "child-process-async": "^1.0.1",
+    "concurrently": "^7.3.0",
+    "discord.js": "^14.2.0",
+    "libsodium-wrappers": "^0.7.10",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-ionicons": "^4.2.0",
+    "react-scripts": "5.0.1",
+    "serve": "^14.0.1",
+    "typeface-roboto": "^1.1.13"
+  },
+  "devDependencies": {
+    "eslint-plugin-react": "^7.26.1",
+    "prettier": "^2.4.1",
+    "prettier-plugin-sort-json": "^0.0.2"
+  },
+  "scripts": {
+    "develop_web": "GENERATE_SOURCEMAP=false react-scripts start",
+    "develop_server": "node server/server.js",
+    "clean": "prettier src --write && eslint src --color --max-warnings 0 --fix",
+    "build": "react-scripts build",
+    "setup": "node setup.js",
+    "start": "concurrently \"serve -l 3000 -s build\" \"node server/server.js\""
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}

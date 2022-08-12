@@ -1,0 +1,23 @@
+.buttonList {
+    display: flex;
+    flex-direction: column;
+}
+
+.buttonList {
+    display: flex;
+    flex-direction: column;
+}
+
+.buttonList button {
+    background-color: var(--accent);
+    color: var(--white);
+    border: none;
+    margin-top: 2em;
+    padding: 1em;
+    text-transform: capitalize;
+    transition: 0.1s;
+}
+
+.buttonList button:hover {
+    background-color: var(--accent-hover);
+}
