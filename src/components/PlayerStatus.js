@@ -53,7 +53,7 @@ export const PlayerStatus = () => {
                     <p> {data?.status?.channel}</p>
 
                     <p>Playlist:</p>
-                    <p> {data?.status?.genre?.replace("_", " ") || "-"}</p>
+                    <p> {data?.status?.genre?.replaceAll("_", " ") || "-"}</p>
 
                     <p>Playing:</p>
                     <p> {data?.status?.song || "-"}</p>

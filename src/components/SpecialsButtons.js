@@ -30,7 +30,7 @@ export const SpecialsButtons = () => {
                             key={i}
                             onClick={() => play({ variables: { song: g } })}
                         >
-                            {g.replace("_", " ")})
+                            {g.replaceAll("_", " ")})
                         </button>
                     ))}
                 </div>

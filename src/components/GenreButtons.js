@@ -38,7 +38,7 @@ export const GenreButtons = () => {
                                     play({ variables: { genre: g.name } })
                                 }
                             >
-                                {g.name.replace("_", " ")} ({g.amount})
+                                {g.name.replaceAll("_", " ")} ({g.amount})
                             </button>
                         ))}
                 </div>
